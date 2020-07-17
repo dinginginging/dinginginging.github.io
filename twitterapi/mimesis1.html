@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Mimesis 1.0</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="mimesis1.css">
+    <link rel="icon" type="image/png" href="image/favicon.png" sizes="16x16">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+		  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+		  crossorigin="anonymous"></script>
+<!--     <script src="p5.js"></script>
+    <script src="addons/p5.sound.min.js"></script>
+    <script src="sketch.js"></script> -->
+  </head>
+
+  <body>
+    <div class="nav">
+
+        <div id="title">
+                <img id='logo' src="image/logo-1.png" alt="mimesis"/>
+                <img id='logo' src="image/1.png" alt="mimesis"/>
+        </div>
+
+        <video loop muted controls autoplay id="vid1">
+            <source src="video/mimesis1s.mp4" type="video/mp4">
+        </video>
+
+        <div id="empty">
+        </div>
+
+      	<div id="buttons">
+
+                <!-- ____________1 button: collection____________________ -->
+                <div class="collection">
+                    <h3>Mimesis Collection</h3>
+                    <img class="arrow three" src="image/path.png" alt="arrow1"/>
+                </div>
+
+                <div class="display collectioninfo">
+                    <div class="content">
+                        <h2> Hello, this is a Mimesis collection on Twitter: <a href="https://twitter.com/Mimesis_2020" target="blank">Mimesis</a>.
+                         If you have been here before, you may notice things shifting, because other visitors upload new Mimesis to the collection.<br><br>
+                        If you accidentally find/submit your Mimesis to this collection, there's no other way to remove it. However, if you don't want to show it to the public, please <a href = "mailto: steven.dingyy@gmail.com" target="blank">email</a> your request to us.
+                        </h2>
+                    </div>
+                </div>
+
+    	      	<!-- ____________2 button: view your mimesis____________________ -->
+    	      	<div class="viewyourmimesis">
+    	      		<h3>Generate your Mimesis</h3>
+                    <img class="arrow two" src="image/path.png" alt="arrow1"/>
+    	      	</div>
+
+    	      	<div class="display showmimesis">
+
+    	      		<div id="currentState">
+    			      	<div class="content">
+    				        <h2>Current account:</h2>
+    				        <h1>___</h1>
+    				        <h2>Tweet Counts</h2>
+    				        <h1>___</h1>
+    				        <h2>Time range</h2>
+    				        <h1>___</h1>
+    				    </div>
+    		        </div>
+
+    			    <div id="inquiry">
+    			        <input id="info" type="text" placeholder="Twitter account" name="name" required>
+    			<!--         <input id="" type="text" placeholder="Twitter account" name="since_id"> -->
+    			        <input id="info" type="number" placeholder="Count(Max:200)" name="count" required>
+    			        <button id="submit" type="button">Submit</button>
+    			    </div>
+
+    	    	</div>
+
+                <!-- ____________3 button: introduction____________________ -->
+                <div class="introduction">
+                    <h3>About</h3>
+                    <img class="arrow one" src="image/path.png" alt="arrow1"/>
+                </div>
+
+	    </div>
+    </div>
+
+    <div class="output">
+
+         <!-- ----------- intro------------ -->
+        <div class="display1 intro">
+            
+            <div id="text">
+                <h5>What is Mimesis 1.0</h5>
+                <h6>Mimesis 1.0 is a website that conducts digital profiling as a third party. Twitter is the data source platform. In the 'Generate your Mimesis' section, input the Twitter ID and Count to generate more Mimesis 1.0 profile. There is an option to upload the new profile to Twitter: <a href="https://twitter.com/Mimesis_2020" target="blank">Mimesis</a>.
+                </h6> <br><br>
+
+                <h5>How it works?</h5>
+                <h6>Tweets are pulled from users’ home-timeline by <a href="https://developer.twitter.com/en/docs" target="blank">Twitter API</a> and piped into a sentiment analysis model which will spit out 1,0,-1 meaning positive, neutral, and negative which will be matched to green, blue, and red. Circles are drawn from inside to the outside.<br><br>
+
+                As a tree ring storing climate and atmospheric conditions data, Mimesis 1.0 stores personal sentiment data. It is a visual representation of the internet user. It is an avatar, as well as simulacra.</h6><br><br>
+
+                <h5>How to 'read' Mimesis 1.0?</h5>
+                <h6>This report is one of the outcomes of the Mimesis project. It is a reference for you to parse, understand, and digest Mimesis 1.0. In this report, the Twitter account is Gigi Hadid, and the Count is 200.</h6>
+            </div>
+
+            <div id="main">
+                <img id='image' src="image/report1.jpg" alt="report"/>
+                <img id='image' src="image/report2.jpg" alt="report"/>
+                <img id='image' src="image/report3.jpg" alt="report"/>
+            </div>
+
+            <div id="text">
+
+                <h5>Designer</h5>
+                <h6><a href="https://www.dinginging.com/" target="blank">Yangyang Ding</a></h6> <br><br>
+
+                <h5>Developer</h5>
+                <h6><a href="https://www.dinginging.com/" target="blank">Yangyang Ding</a> <br>
+                <a href="https://medium.com/@benjaminvu" target="blank">Benjamin Vu</a></h6><br><br>
+
+                <h5>Committee</h5>
+                <h6>
+                <a href="https://www.agihaines.com/" target="blank">Agatha Haines</a><br>
+                <a href="http://minkyoungkim.com/home/" target="blank">Minkyoung Kim</a><br>
+                <a href="https://www.are.na/nic-schumann" target="blank">Nic Schumann</a></h6>
+                <br><br>
+
+                <h5>Read more</h5>
+                <h6><a href="https://dinginginging.github.io/ding/twitterapi/mimesis.html" target="blank">Mimesis website</a></h6><br><br>
+
+                <h5>Follow</h5>
+                <h6><a href="https://twitter.com/Mimesis_2020" target="blank">Twitter</a></h6>
+            </div>
+
+        </div>
+
+        <!-- ----------- Gallery------------ -->
+    	<div class="display1 gallery">
+
+            <div class="user b">
+                <img id='result1' src="image/treeringcopy.jpg" alt="treering"/>
+                <p>Image source:</p>
+                <h4><a href="https://www.wayfair.com/decor-pillows/pdx/lintonart-origional-handmade-woodblock-print-of-tree-ring-from-ash-tree-graphic-art-lnna1089.html" target="blank"> LintonArt shop</a></h4>
+            </div>
+
+            <div class="user c">
+                <img id='result1' src="image/example.jpg" alt="example"/>
+                <p>Example:</p>
+                <h4>Tweets count: 3</h4>
+            </div>
+            
+    		<div class="user f">
+    			<img id='result' src="image/realDonaldTrump.png" alt="realDonaldTrump"/>
+    			<p>Donald Trump</p>
+    			<h4>2020 April 21 - 2020 April 28</h4>
+    		</div>
+    		<div class="user e">
+    			<img id='result' src="image/BarackObama.png" alt="BarackObama"/>
+    			<p>Barack Obama</p>
+    			<h4>2019 April 15 - 2020 April 27</h4>
+    		</div>
+    		<div class="user f">
+    			<img id='result' src="image/iingwen.png" alt="iingwen"/>
+    			<p>Tsai Ing-wen</p>
+                <h4>2019 November 23 - 2020 April 27</h4>
+    		</div>
+    		<div class="user g">
+    			<img id='result' src="image/SenSanders.png" alt="SenSanders"/>
+    			<p>Bernie Sanders</p>
+                <h4>2020 March 12 - 2020 April 27</h4>
+    		</div>
+    		<div class="user h">
+    			<img id='result' src="image/DrTedros.png" alt="DrTedros"/>
+    			<p>Tedros Adhanom Ghebreyesus</p>
+                <h4>2020 April 18 - 2020 April 27</h4>
+    		</div>
+    		<div class="user i">
+    			<img id='result' src="image/GretaThunberg.png" alt="GretaThunberg"/>
+    			<p>Greta Thunberg</p>
+                <h4>2020 March 5 - 2020 April 27</h4>
+    		</div>
+    		<div class="user j">
+    			<img id='result' src="image/Trevornoah.png" alt="Trevornoah"/>
+    			<p>Trevor Noah</p>
+                <h4>2019 November 1 - 2020 April 27</h4>
+    		</div>
+    		<div class="user 8">
+    			<img id='result' src="image/elonmusk.png" alt="elonmusk"/>
+    			<p>Elon Musk</p>
+                <h4>2020 April 16 - 2020 April 28</h4>
+    		</div>
+    		<div class="user 9">
+    			<img id='result' src="image/NASA.png" alt="NASA"/>
+    			<p>NASA</p>
+                <h4>2020 April 14 - 2020 April 28</h4>
+    		</div>
+    		<div class="user 10">
+    			<img id='result' src="image/Guggenheim.png" alt="Guggenheim"/>
+    			<p>Guggenheim Museum</p>
+                <h4>2020 February 14 - 2020 April 28</h4>
+    		</div>
+
+    	</div>
+
+    	<!-- ----------- sentiment analysis result------------ -->
+    	<div class="display1 drawing">
+
+    	</div>
+      	
+    </div>
+  
+  </body>
+
+  <script>
+    document.getElementById('vid1').play();
+
+  	$(function(){
+
+            $(".introduction").hover(function(){
+              $(this).toggleClass("highlight");
+            });
+
+  			$(".introduction").on("click",function(){
+                $(".display").fadeOut(0);
+                $(".display1").fadeOut(0);
+                $(".arrow").fadeOut(0);
+    			$(".one").css({display:"inline"});
+                $(".intro").fadeIn(0);;
+            });
+
+            $(".viewyourmimesis").hover(function(){
+              $(this).toggleClass("highlight");
+            });
+
+            $(".viewyourmimesis").on("click",function(){
+                $(".display").fadeOut(0);
+                $(".display1").fadeOut(0);
+                $(".arrow").fadeOut(0);
+                $(".two").css({display:"inline"});
+                $(".drawing").fadeIn(0);
+                $(".showmimesis").fadeIn(0);
+            });
+
+            $(".collection").hover(function(){
+              $(this).toggleClass("highlight");
+            });
+
+            $(".collection").on("click",function(){
+                $(".display").fadeOut(0);
+                $(".display1").fadeOut(0);
+                $(".arrow").fadeOut(0);
+                $(".three").css({display:"inline"});
+                $(".gallery").fadeIn(0);
+                $(".collectioninfo").fadeIn(0);
+            });
+    	});
+
+    
+  </script>
+
+</html>

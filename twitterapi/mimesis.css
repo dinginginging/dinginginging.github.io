@@ -1,0 +1,321 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+	display:flex;
+	flex-direction:column;
+	flex-wrap:nowrap;
+
+	margin:0;
+	position:absolute;
+	height:100%;
+	width:100%;
+
+/*	border-width:1px;
+	border-color:#787878;
+	border-style:solid;*/
+}
+
+/*------------------ title  -----------------------*/
+
+#title{
+	z-index: 1000;
+	display:block;
+	position:fixed;
+	width:331px;
+	height:200px;
+	margin:0;
+	padding:0;
+
+/*	border-width:0 1px 0 0;
+	border-color:#787878;
+	border-style:solid;*/
+}
+#logo{
+	position:fixed;
+	top:20px;
+	left:30px;
+	height:30px;
+	opacity:100%;
+}
+
+#footing{
+	position:fixed;
+	bottom:30px;
+	left:30px;
+	height:30px;
+	opacity:100%;
+}
+
+
+#vid1{
+	position:absolute;
+	left:30px;
+	top:60px;
+	width:50px;
+}
+
+
+/*--------------- navigation bar -------------------*/
+nav{
+
+    position: sticky;
+    top:150px;
+    align-self: start;
+
+
+	z-index:100;
+	box-sizing: border-box;
+	background-color:white;
+
+}
+
+h2{
+	margin:0;
+	padding:0;
+	font-family: roboto;
+	font-weight: 300;
+	font-size:15px;
+	color:black;
+	display: inline;
+
+	position:relative;
+	left:34px;
+	/*left should be 30 but they just can't align with other row. don't know why*/
+}
+
+h3{
+	margin:0;
+	padding:0;
+	font-family:roboto;
+	font-weight:400;
+	font-size:15px;
+	color:black;
+	display: inline;
+
+	position:relative;
+	left:18px;
+}
+
+main {
+    display:flex;
+	flex-direction:row;
+	flex-wrap:nowrap;
+
+    margin:0;
+	position:absolute;
+	width:100%;
+
+	flex:1;
+}
+
+.section-nav li.active > a {
+    background-color: #E5E7E9;
+    font-weight: 500;
+}
+
+.section-nav li:hover > a {
+    background-color: #F1F1F1;
+}
+
+.section-nav {
+    padding-left: 0;
+	width:330px;
+}
+
+.section-nav a {
+    text-decoration: none;
+    display: block;
+    padding: 3px 0;
+
+    transition: all 50ms ease-in-out; /* 💡 This small transition makes setting of the active state smooth */
+}
+
+/** Poor man's reset **/
+* {
+    box-sizing: border-box;
+}
+
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 30px;
+}
+
+ul{
+	list-style: none;
+    margin: 0;
+    padding: 0;
+}
+li {
+	list-style: none;
+    margin-left: 0;
+}
+
+#arrow{
+	width:12px;
+	padding:0;
+	margin:0;
+	position:relative;
+}
+
+#arrow2{
+	width:12px;
+	padding:0;
+	margin:0;
+	position:relative;
+}
+
+
+
+/*________________content on the right column________________*/
+
+.content{
+	z-index:10;
+	background-color:white;
+	position:relative;
+	padding:0 30px;
+
+	border-width:0 0 0 1px;
+	border-color:#787878;
+	border-style:solid;
+
+	flex:1;
+	overflow:auto;
+	display:block;
+}
+
+#empty{
+	height:150px;
+	padding:0;
+}
+
+#introduction{
+	display:grid;
+	grid-template-columns: 67% 17%;
+	column-gap: 120px;
+
+	padding: 0 0 400px 0;
+}
+
+section{
+    padding: 0 0 200px 0;
+}
+
+#mimesis1,
+#mimesis2,
+#scenarios,
+#essay1,
+#essay2,
+#map{
+	padding: 0 0 400px 0;
+}
+
+.scenarios{
+	padding: 0 0 200px 0;
+}
+
+
+#section,
+#scenarios--report,
+#scenarios--avatar,
+#scenarios--beautyfilter,
+#scenarios--feedbackloop,
+#scenarios--contentmoderator
+{
+	display:flex;
+	flex-direction:row;
+	flex-wrap:nowrap;
+}
+
+
+#image{
+	width:100%;
+	padding:0;
+	margin:0 0 15px 0;
+}
+
+
+.visual{
+	width:60%;
+	margin:0 100px 0 0;
+}
+.description{
+	width:30%;
+}
+
+/*____essays________*/
+.visual1{
+	width:40%;
+	margin:0px 100px 0 0;
+}
+.description1{
+	width:20%;
+}
+
+#externallink{
+	position:relative;
+	top:50px;
+}
+
+/*____video________*/
+#vid{
+	width:80%;
+}
+
+video{
+	width:100%;
+}
+
+a{
+	color:black;
+	font-weight: 400;
+	text-decoration: none;
+}
+
+h1{
+	margin:0;
+	padding:0 0 20px 0;
+	font-family: roboto;
+	font-size:24px;
+	color:black;
+	display:block;
+}
+
+/*____introduction________*/
+h4{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	/*text-align: justify;*/
+	font-size:33px;
+	/*font-style: italic;*/
+	/*hyphens: auto;*/
+	color:black;
+	margin:0;
+	padding:0;
+
+	position:relative;
+}
+h5{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	/*text-align: justify;*/
+	font-size:15px;
+	color:black;
+	margin:0;
+	padding:0;
+	display:inline;
+}
+
+h6{
+	font-family: 'Roboto', sans-serif;
+	font-weight: lighter;
+	/*text-align: justify;*/
+	font-size:15px;
+	color:blue;
+	margin:0;
+	padding:0;	
+	display:inline;
+}
+

@@ -1,0 +1,96 @@
+header{
+	position:fixed;
+	height:680px;
+	width:500px;
+	top:10px;
+	left: 50%;
+	margin-left: -250px;
+
+	background-image: 
+	url(https://occ-0-2954-2568.1.nflxso.net/dnm/api/v6/XsrytRUxks8BtTRf9HNlZkW2tvY/AAAABdriYYpH78GXJkfsl078lThi97olqG35ZanwbdvWz6nZ3c7z3nwfaI4wMeJiyaonTsPS8H4AGPrVRR22B4tRHLvWboOHrnr5gOvvMJZuePs_VmcGHKp3yYrS3RMBNQ.jpg);
+	background-size:cover;
+	background-position:top center;
+}
+
+.credit h1{
+	position:relative;
+	top:10px;
+}
+
+h1{
+	font-family:helvetica;
+	font-weight: 300;
+	font-size: 12px;
+	text-align:center;
+	color: white;
+}
+
+p{
+	font-family:helvetica;
+	font-weight: 300;
+	font-size: 15px;
+}
+
+main{
+	width:500px;
+	height:100%;
+	margin:20px auto;
+	position:relative;
+	top:680px;
+	display: block;
+	overflow: auto;
+	background-color: black;
+	opacity: 0.7
+}
+
+footer{
+	background-color: black;
+	position:relative;
+	top:680px;
+	width:500px;
+	height:50px;
+	margin:0 auto;
+}
+
+.A{
+	width:300px;
+	float:left;
+	margin:0;
+	background-color: black;
+	position: relative;
+}
+
+.B{
+	width:300px;
+	float:right;
+	margin:0;
+	background-color: black;
+	position: relative;
+}
+
+
+.name span{
+	font-family:helvetica;
+	font-weight:200;
+	font-size:10px;
+}
+
+.Barack{
+	color:white;
+	background-color: black;
+}
+
+.Michelle{
+	color:white;
+	background-color: black;
+}
+
+.Julia{
+	color:white;
+	background-color: black;
+}
+
+.Steven{
+	color:white;
+	background-color: black;
+}

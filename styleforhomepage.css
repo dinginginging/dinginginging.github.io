@@ -1,0 +1,16 @@
+h1{
+	font-family: helvetica;
+	margin:20px 20px 0 20px;
+}
+.list{
+	margin:0 0;
+	padding:20px 0;
+}
+
+a{
+	font-family:helvetica;
+	color:black;
+	border-bottom-style: none !important;
+	margin:4px 20px;
+	display:block;
+}

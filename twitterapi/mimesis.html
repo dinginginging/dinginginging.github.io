@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Mimesis</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="mimesis.css">
+    <link rel="icon" type="image/png" href="image/favicon1.png" sizes="16x16">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+		  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+		  crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+
+    <main>
+
+        <div id="title">
+            <!----- logo onclick return to the top ------>
+                <li><a href="#empty">
+                    <img id='logo' src="image/logo-1.png" alt="mimesis"/>
+                </a></li>
+
+                <video loop muted controls autoplay id="vid1">
+                  <source src="video/mimesis2-1.mp4" type="video/mp4">
+                </video>
+        </div>
+
+        <nav class="section-nav">
+
+            <ol>
+
+                <li><a href="#mimesis1">
+                    <img id='arrow2' src="image/path.png" alt="arrow1"/>
+                    <h3>Mimesis 1.0</h3></a>
+                </li>
+
+                <li><a href="#mimesis2">
+                    <img id='arrow2' src="image/path.png" alt="arrow1"/>
+                    <h3>Mimesis 2.0</h3></a>
+                </li>
+
+                <li><a href="#scenarios">
+                    <img id='arrow2' src="image/path.png" alt="arrow1"/>
+                    <h3>Application Scenarios</h3></a>
+
+                    <ul>
+                        <li class=""><a href="#scenarios--report"><h2>Personal report</h2></a></li>
+                        <li class=""><a href="#scenarios--avatar"><h2>Avatar for Tinder</h2></a></li>
+                        <li class=""><a href="#scenarios--beautyfilter"><h2>Beauty filter for text editing</h2></a></li>
+                        <li class=""><a href="#scenarios--feedbackloop"><h2>Feedback loop</h2></a></li>
+                        <li class=""><a href="#scenarios--contentmoderator"><h2>Content moderator</h2></a></li>
+                    </ul>
+
+                </li>
+
+                <li><a href="#essay1">
+                    <img id='arrow2' src="image/path.png" alt="arrow1"/>
+                    <h3>Thesis Essay</h3></a>
+                </li>
+
+                <li><a href="#essay2">
+                    <img id='arrow2' src="image/path.png" alt="arrow1"/>
+                    <h3>Research Essay</h3></a>
+                </li>
+
+                <li><a href="#map">
+                    <img id='arrow2' src="image/path.png" alt="arrow1"/>
+                    <h3>Maps: Digital Image</h3></a>
+                </li>
+
+            </ol>
+
+            <div id="footing">
+                <h5><a href="https://www.dinginging.com/" target="blank">Yangyang Ding</a>2020</h5>
+            </div>
+
+        </nav>
+
+        <div class="content">
+
+            <!----- return to the top ------>
+            <section id="empty">
+            </section>
+
+            <section id="introduction">
+                <h4>
+                    Digital profiling is the process of gathering and analyzing information that exists online about an individual. Platforms who provide services always have control of this powerful tool. As a result, I used Twitter API as the principle medium to conduct 'digital profiling' as a third party. The visual identity of the new digital profile is not an ads interest list anymore, but a graph that stores personal information that could be used as an avatar. On top of the new visual identity, I speculated several possible applications of the new visual outcome. The idea put forward in this thesis is that shifting the purpose of digital profiling toward being human-centered rather than advertising-driven may draw worthwhile arguments about the practicality and policy issues. My point is to demonstrate my future vision or wish for this technology and propose a mutually beneficial strategy for tech companies. 
+                </h4>
+
+                <h5><b>mimesis</b> is a thesis project initiated and developed by <a href="https://www.dinginging.com/" target="blank">Yangyang Ding</a>. Yangyang is a master’s degree candidate in Industrial Design at RISD. His thesis advisory committee consists of 
+                    <a href="https://www.agihaines.com/" target="blank">Agatha Haines</a>, 
+                    <a href="http://minkyoungkim.com/home/" target="blank">Minkyoung Kim</a>, and 
+                    <a href="https://www.are.na/nic-schumann" target="blank">Nic Schumann</a>. Also special thanks to 
+                    <a href="https://www.paolocardini.com/" target="blank">Paolo Cardini</a>, 
+                    <a href="http://benjurgensen.com/index.html" target="blank">Benjamin Jurgensen</a>, and 
+                    <a href="https://medium.com/@benjaminvu" target="blank">Benjamin Vu</a>.
+                    <br><br>
+                </h5>
+            </section>
+
+
+
+            <section id="mimesis1">
+                <h1>mimesis1.0</h1>
+
+                <section id="section">
+                    <div class="visual">
+                        <video loop muted controls autoplay id="vid">
+                          <source src="video/mimesis1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+
+                    <div class="description">
+                        <h5>Twitter is the central platform involved in the process. Twitter API has three aggregated streams of Tweets, which are home timeline, user timeline, and mention timeline. The home time- line consists of retweets and the user's tweets, which represent the user's thoughts. Mimesis1.0 pulls tweets from the Gigi Hadid home timeline and then pipes tweets into a sentiment analysis model which will spit out 1,0,-1 as sentimental results meaning positive, neutral and negative. After that, it uses Processing to match these digits to green, red and blue and draws circles from inside to the outside. As a tree ring storing climate and atmospheric conditions data, Mime- sis1.0 stores personal sentiment data. It is a visual representation of the internet user. It is an avatar, as well as simulacra.</h5>
+                        <div id="externallink">
+                            <img id='arrow' src="image/path1.png" alt="arrow"/> 
+                            <h2><a href="https://twitter.com/Mimesis_2020" target="blank">Twitter: Mimesis</a></h2>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section id="section">
+                    <div class="visual">
+                        <img id='image' src="image/mimesiswebsite.jpg" alt="website"/>
+                    </div>
+
+                    <div class="description">
+                        <h5>The goal of this website is to bring access to a broader range of audiences other than GitHub users. At the same time, it uses Mimesis as a medium to build a community that is also linked to a Twitter account. <br><br>
+
+                        The audience could input their information and submit their request in the 'view your Mimesis' section. Their Mimesis will be drawn and replace the placeholder. The new graph is also available for download. Their new requests will be updated in new blocks emerging after 'the latest request' block.<br><br>
+
+                        Special thanks to Benjamin Vu for helping composing javascript for this site.
+                        </h5>
+                        <div id="externallink">
+                            <img id='arrow' src="image/path1.png" alt="arrow"/>   
+                            <h2 id="text"> <a href="https://shrouded-oasis-30922.herokuapp.com/" target="blank">View your mimesis</a></h2>
+                        </div>
+                    </div>
+                </section>
+
+            </section>
+
+            <section id="mimesis2">
+                <h1>mimesis2.0</h1>
+                <section id="section">
+                    <div class="visual">
+                        <video loop muted controls autoplay id="vid">
+                          <source src="video/mimesis2.mp4" type="video/mp4">
+                        </video>
+                    </div>
+
+                    <div class="description">
+
+                        <h5>Mimesis2.0 is the speculative result based on the same process as mimesis1.0, which is extracting data, conducting analysis, and drawing the result. The difference between 1.0 and 2.0 is not only replacing the sentiment model with the </h5><h6>cluster analysis mode</h6> <h5>but also much higher complexity during the process. The MobileNet model in RunwayML(a democratized machine learning tool for artists and designers) is the one that I have used and tested for 2.0. Because this low fidelity model performs similar to the required cluster analysis model, which needs to be trained by enormous labeled datasets, the list of which will refer to the popular synsets in imagenet. After data is piped into the model, it generates several clusters. The names of these clusters are subsets of the labels in the data set, which will be</h5> <h6>mapped to colors.</h6>
+
+                        <img id='image' src="image/cluster.png" alt="cluster"/> 
+                        <h6>Cluster analysis model</h6>
+                        <img id='image' src="image/cluster1.jpg" alt="cluster"/> 
+                        <h6>Color matching</h6>
+                    </div>
+
+                </section>
+            </section>
+
+            <section id="scenarios">
+                <h1>Application scenarios</h1>
+                <div class="visual scenarios">
+                    <h5>As mentioned before, the new ‘digital profiling’ visual identity will be hosted in the same context, which means corporates still hold control in hands. It is also a try-out by the third party, which is also a small win. The other potential application scenarios outlined below are one step further. It doesn’t mean these scenarios are against the context. It also doesn’t mean that there is no space for these scenarios to survive. The difference is how much control is given back to users. Projects like Nobias (Google extension), Alias (filter for Google Home), Gobo (social media filter) are great paradigms. These applications could be experiments, third party plugins, or actual products. Before carrying out applications, they need to be a proof of concept that could generate revenue through further experimentation, research, and policy development.<br><br>
+
+                    Each application consists of one visual outcome and one piece of description. The extrapolation is the extension of the past trajectory. The mediums vary from reports, to designs, to videos.      
+                    </h5>
+                </div>
+                <section id="scenarios--report">
+                    <div class="visual">
+                        <h1>Personal Report</h1>
+                        <img id='image' src="image/report1.jpg" alt="report"/>
+                        <img id='image' src="image/report2.jpg" alt="report"/>
+                        <img id='image' src="image/report3.jpg" alt="report"/>
+                    </div>
+
+                    <div class="description">
+                        <h5><br><br><br>This personal report derives from the Mimesis1.0 functioning as further analysis of the Mimesis1.0 graph. <br><br>
+
+                        In RSPH's research report ‘Social Media and Young People's Mental Health and Wellbeing, five social media platforms, Youtube, Twitter, Facebook, Snapchat, and Instagram, are the primary targets in the survey, which is conducted among around 1,500 14 to 24-year-old people. Fourteen factors are being asked during the survey, including awareness, anxiety, loneliness, sleep, and self-expression. The result was Youtube ranked first and was the only positive platform among them all. Twitter ranked in 2nd place, then Facebook, Snapchat, and Instagram took last place.<br><br>
+
+                        At the same time, there is emerging research on the relationship between mental health and social media. 'We review recent work that utilizes social media "big data" in conjunction with associated technologies like natural language processing and machine learning to address pressing problems in population-level mental health surveillance and research, focusing both on technological advances and core ethical challenges.' Thus, this personal Twitter report might become auxiliary material for mental health analysis.  <br><br>
+
+                        According to the trait of Twitter API and tweets object, there are two methods to filter tweets. The first method that twitter currently provides is seven parameters: name, count, since_id (from when), max_id (until when), trim_user, exclude_replies, and include_entities. When the request is submitted, these parameters help filter tweets. The second method is selecting the attributes in the tweet objects to write into a dictionary, and then filtering the dictionary for specific values of attributes. Filtering tweets according to different parameters might cater to different perspectives and needs.</h5>
+                    </div>                
+                </section>
+
+                <section id="scenarios--avatar">
+
+                    <div class="visual">
+                        <h1>Avatar for Tinder</h1>
+                        <img id='image' src="image/twitter.png" alt="report"/>
+                    </div>
+
+                    <div class="description">
+                        <h5><br><br><br>The media uses representations - images, words, and characters or persona - to convey ideas and values. On different social media platforms, we use different packages of information to display ourselves and interact with each other. There are also auxiliary tools like avatars creating applications to recreate an animation yourself. But still, the process of creating these avatars is an accumulation of socially and historically constructed concepts. In other words, gender, skin color, race, body shape, and face shape are still ingrained in those avatars. Prejudices are built into existing institutions and structures, and even though they look like a new medium, however, they still create barriers and limit opportunities.<br><br>
+
+                        Mimesis 1.0 is a customized graph, generated from the text by sentiment analysis, model, and processing. Although there is bias ingrained in constructing a deep learning model, results could be a new form of identity representation. Is it more natural and neutral? Does it break barriers and limits? <br><br>
+
+                        Tinder users can choose to connect Mimesis like Snapchat and Instagram photos. From a user's perspective, bridging Snapchat and Instagram with Tinder increases the plurality of information, though it might turn into a concern for some users. Mimesis shares the same idea offering Tinder users an option to show more about themselves. On top of that, Mimesis provides an alternative for matching algorithms. In color practice, there are multiple choices to collocate different colors. What if matching algorithms could use Mimesis as a source to incorporate color combination theory to expand users' options? Users' cards will be pushed to others based not only on age, distance, and gender preferences but also on their Mimesis matches. </h5>
+                    </div>
+
+                </section>
+
+                <section id="scenarios--beautyfilter">
+
+                    <div class="visual">
+                        <h1>Beauty filter for text editing</h1>
+                        <img id='image' src="image/guideline.jpg" alt="report"/>
+                    </div>
+
+                    <div class="description">
+                        <h5><br><br><br>Platforms are places that will showcase your personality. There are a lot of behavior taxonomies out there. In Nancy White's research project: ‘Community Member Roles and Types,’ she came up with 15 archetype participation styles which are: core participants, readers/lurkers, dominators, linkers, flamers, actors, energy creatures, defenders, needlers, newbies, pollyAnnas, spammers, 'black & white' folks, 'shade of grey' folks and untouchable elders. Different archetypes maintain their style in multiple ways, including constructing a profile and engaging publicly in their own way. <br><br>
+
+                        In the book 'Virtual Social Identity and Consumer Behavior,' authors point out that the benchmark in adolescence is the kids’ desire and ability to explore multiple selves. It won't be a surprise that all internet users will not maintain the same identity through all the platforms. It's a fundamental desire to explore and embrace the other-selves within themselves. In everyday life, we approach every individual in a very different manner. Our behavior is based on the environment, who we are with, and what community we are in. This kind of behavior pattern can even be viewed on social platforms.<br><br>
+
+                        In Japanese, there is a phrase called '人設' (renshe) which originated from game design. It means the character design. Later on, in the Chinese internet environment, it became a phrase that is used to describe celebrities' public images. It is always designed by the company or celebrities' studio for marketing purposes. Gradually, every individual realized that they all have '人設' more or less. You might try to be tolerant, smart, or critical on Twitter. You might only post beautiful pictures on Instagram since it's visual-driven. The professional version of you will be on Linkedin.<br><br>
+
+                        There's a definite need here. What kind of application could help internet users build a better public image according to their needs? Currently, all different types of photo editing apps, beautifying filters, and avatar apps are prevailing. Most of these are visual-driven, targeting popular Instagram users. What’s next? What is the service for Twitter, and these text-driven platforms?<br><br>
+
+                        The Twitter bot has been published for almost a decade. The usage is still focused on research and some public services. 'The bot software may autonomously perform actions such as tweeting, re-tweeting, liking, following, unfollowing, or directly messaging other accounts. The automation of Twitter accounts is governed by a set of automation rules that outline proper and improper uses of automation.'<br><br>
+
+                        What if Mimesis is the automation rule that governs the bot? In that case, users could create certain types of Mimesis that follow specific behavioral patterns. In February, OpenAI published a language model called GPT-2 that generates coherent paragraphs of text one word at a time. Mimesis, GPT-2 model, and Twitter bot complete the critical components in the new application for Twitter. </h5>
+                    </div>
+                
+                </section>
+
+                <section id="scenarios--feedbackloop">
+
+                    <div class="visual">
+                        <h1>Feedback loop</h1>
+                        <video loop muted controls autoplay>
+                          <source src="video/backgroundmimesis.mp4" type="video/mp4">
+                        </video>
+                    </div>
+
+                    <div class="description">
+                        <h5><br><br><br>Thomas Goetz mentioned that a feedback loop involves four distinct stages: evidence, relevance, consequence, and operation.From the user experience design perspective, it is not complicated to build a real feedback loop to counterbalance the dopamine-driven 'feedback loop.' It is possible to imagine a feedback loop where there is relevant evidence that can trigger users to adjust their subsequent behavioral. In the article ‘Harnessing the Power of Feedback Loop’, there is a case that city engineers slow down drivers in school zones by an average of 14 percent by merely showing current speed to the drivers on a dynamic speed display. <br><br>
+
+                        For Mimesis 2.0 and the ideal Mimesis, the speculative application happens on platforms functioning as user's information resources. In this scenario, the demonstration executes on Instagram's home page, which will be used as the background of the app. There are two different stages of the Mimesis. In the first stage, colors won't change but rather they’ll slowly float. The second stage will be triggered by the posts that are liked by the user. The new liked post will be analyzed by the system, and the analysis outcome will decide to increase, decrease or change colors. Referring back to the four stages of the feedback loop: evidence, relevance, consequence, and operation, Mimesis embedded in the background functions as the relevant evidence of the user's liked posts. When users’ likes are limited to a few categories of posts, the diversity of colors in Mimesis will diminish. This builds the consequence stage, which informs users of their 'bubble.' And finally, the 'bubble' nudges users to operate and completes the feedback loop.<br><br>
+
+                        What's more, this is not a speculation of what comes after dark mode design, but it could be an alternative option. Dark mode design has been criticized for not being proven to improve focus or productivity. A new design feature is a better definition of what it is. Mimesis background is designed as a feedback loop, as well as a customized background (for marketing).</h5>
+                    </div>
+                
+                </section>
+
+                <section id="scenarios--contentmoderator">
+                    <div class="visual">
+                        <h1>Content moderator</h1>
+                        <video loop muted controls autoplay>
+                          <source src="video/contentmoderator.mp4" type="video/mp4">
+                        </video>
+                    </div>
+
+                    <div class="description">
+                        <h5>
+                            <br><br><br>The content moderator is the reverse engineering of the ideal mimesis. In this system, you have two slide bars to control your feeds. The variety of themes is linked to the diversity of the colors, and variety of perspectives is linked to the saturation of the colors.
+                        </h5>
+                    </div>
+                </section>
+            </section>
+
+            <section id="essay1">
+                <h1>The close future of digital profiling</h1>
+
+                <section id="section">
+                    <div class="visual1">
+                        <h5>
+                            The goal of this essay is to explore three main issues (from the users’ side; lack of transparency in data collecting and processing, lack of control, and lack of feedback loop for confirmation bias.) inside digital profiling, followed by my solution to these issues and the applications. My stance toward this topic is neither against the powerful internet platforms nor to introduce some technology that will block data collection - it is to imagine possible futures where digital profiling could become human-centered instead of advertising-driven. 
+                        </h5>
+                    </div>
+
+                    <div class="description1">
+                        <a href="file/thenearfutureofdigitalprofiling.pdf" target="_blank"><h2>Read more</h2></a>
+                    </div>
+                </section>
+
+            </section>
+
+
+
+            <section id="essay2">
+                <h1>The spiral and the loop</h1>
+
+                <section id="section">
+                    <div class="visual1">
+                        <h5>
+                            As Julia Cameron puts it in The Artist’s Way, "You will circle through some of the issues over and over, each time at a different level. There is no such thing as being done with an artistic life. Frustrations and rewards exist at all levels on the path. Our aim here is to find the trail, establish our footing, and begin the climb.""
+                            <br>
+                            <br>
+
+                            This essay dives deeper into the research of the system. It shows a more transparent and detailed picture of the digital profiling system. My aim here is to ‘find the trail, establish our footing, and begin the climb.’ In other words, this essay paves the path toward my stance on why we need a more human-centered digital profiling system.
+
+                        </h5>
+                    </div>
+
+                    <div class="description1">
+                        <a href="file/thespiralandtheloop.pdf" target="_blank"><h2>Read more</h2></a>
+                    </div>
+                </section>
+
+            </section>
+
+
+            <section id="map">
+                <h1>Three research maps</h1>
+                <img id='image' src="image/mapjourneyofimage.jpg" alt="report"/>
+                <img id='image' src="image/mapknown&unknown.jpg" alt="report"/>
+                <img id='image' src="image/mapbigimage.jpg" alt="report"/>
+                <div class="visual1">
+                    <h5>
+                        A study of image data and surveillance economy
+                        <br><br>
+
+                        Most of the online information is being collected, calculated and processed by machines and systems. <br><br>
+
+                        There are two different categories of information in and around the digital image. The first category is the cascading information generated along with all the operations on the image. Most of the operations will leave a trace in the image or online. For example, tagging leaves traces. If the image is in a broad collaborative tagging system, there will be a long tail behind the image. If the image is in a narrow tagging system which means only the publisher can tag on the image, the trace will be more succinct and sometimes not related to the image. Once the image is published, the information mainly consists of the comment, likes, and reposts. In some specific situations, there will be saves and archives.The last trace is partially collectible by google reverse search. It is a trace of the poor image as well as a trace of re-formatting, re-editing, reusing, downloading, re-archiving, re-sharing, etc.<br><br>
+
+                        The second category is information about the image. Metadata will be the first batch of information for machines to learn about when, how, and even where the birth of the image is. Machine learning will identify the content of the image in the second batch. It will identify what object, people, architecture, creature, etc., is in the image. Captions usually consist of emotion, people and events that are related to the image. Information in captions might not be identifiable in the image. If the image is creative work instead of documentation, then there will be the fourth batch which is the story or the concept. This kind of information is hard to collect and does not always travel around the internet with the image. Even so, the image itself is the main subject that has been consumed by other users. Furthermore, if the image was sold at auction, there is the fifth batch which is the chronological ownership.
+                    </h5>
+                </div>
+            </section>
+
+        </div>
+
+    </main>
+
+  </body>
+
+  <script>
+
+    window.addEventListener('DOMContentLoaded', () => {
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                const id = entry.target.getAttribute('id');
+                if (entry.intersectionRatio > 0) {
+                    document.querySelector(`nav li a[href="#${id}"]`).parentElement.classList.add('active');
+                } else {
+                    document.querySelector(`nav li a[href="#${id}"]`).parentElement.classList.remove('active');
+                }
+            });
+        });
+
+        // Track all sections that have an `id` applied
+        document.querySelectorAll('section[id]').forEach((section) => {
+            observer.observe(section);
+        });
+    });
+
+
+    document.getElementById('vid').play();
+    document.getElementById('vid1').play();
+
+  </script>
+</html>

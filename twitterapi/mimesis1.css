@@ -1,0 +1,469 @@
+body{
+	display:flex;
+	flex-direction:row;
+	flex-wrap:nowrap;
+	margin:0;
+	position:absolute;
+	height:100%;
+	width:100%;
+}
+
+h1{
+	margin:0;
+	padding:4px 0 0 0;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	font-size:21px;
+	color:black;
+}
+
+h2{
+	margin:0;
+	padding:0;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size:15px;
+	color:black;
+	display: inline;
+	color:#353535;
+}
+
+h3{
+	margin:0;
+	padding:0;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size:15px;
+	color:#6D6D6D;
+	display: inline;
+	position:relative;
+	top:11px;
+	left:30px;
+}
+
+
+a{
+	color:#353535;
+}
+
+
+.nav{
+	z-index:10;
+	width:330px;
+	height:100%;
+	box-sizing: border-box;
+
+	/*border-width:0;
+	border-color:black;
+	border-style:solid;*/
+	background-color:white;
+	overflow:auto;
+	position:relative;
+
+	display:flex;
+	flex-direction:column;
+	flex-wrap:nowrap;
+	justify-content: space-between;
+}
+
+#vid1{
+	position:absolute;
+	left:30px;
+	top:80px;
+	width:100px;
+}
+
+#title{
+	display:block;
+	position:absolute;
+	top:0;
+	width:330px;
+	height:300px;
+	flex:none;
+
+/*	border-width:0 0 1px 0;
+	border-radius:0;
+	border-color:#6B6B6B;
+	border-style:solid;*/
+	box-sizing: border-box;
+	background-color:white;
+}
+
+#logo{
+	height:30px;
+	margin:0;
+	padding:0;
+	position:relative;
+	top:20px;
+	left:30px;
+}
+
+/*empty is for filling out the gap between title and buttons*/
+#empty{
+	flex:auto;
+}
+
+
+
+/*buttons including 'view your mimesis, mimesis collection and more information'*/
+#buttons{
+	z-index: 10;
+	overflow:auto;
+	flex:initial;
+	/*bottom:0;*/
+}
+
+.content{
+	width:270px;
+	position:relative;
+	top:35px;
+	left:30px;
+}
+
+
+/*______________1 button: collection__________________*/
+.collection{
+	display:inline-block;
+	position:relative;
+	width:330px;
+	height:40px;
+
+	border-width:1px 0 0 0;
+	border-radius:0;
+	border-color:#787878;
+	border-style:solid;
+	background-color: white;
+	box-sizing: border-box;
+}
+
+.collection.highlight{
+	background-color: #E5E7E9;
+}
+
+.three{
+	width: 12px;
+	position:relative;
+	top:12px;
+	left:40px;
+}
+
+/*.three.highlight{
+	display:inline;
+}*/
+
+.collectioninfo{
+	height:300px;
+	background-color:#E5E7E9;
+}
+
+
+/*______________2 button: view your mimesis__________________*/
+.viewyourmimesis{
+	display:inline-block;
+	position:relative;
+	width:330px;
+	height:40px;
+
+	border-width:1px 0 0 0;
+	border-radius:0;
+	border-color:#787878;
+	border-style:solid;
+	background-color: white;
+	box-sizing: border-box;
+}
+
+.viewyourmimesis.highlight{
+	background-color: #E5E7E9;
+}
+
+.two{
+	width: 12px;
+	position:relative;
+	top:12px;
+	left:40px;
+	display:none;
+}
+
+
+
+.showmimesis{
+	display:none;
+	height:400px;
+	box-sizing: border-box;
+	background-color:#E5E7E9;
+	position:relative;
+
+	/*border-width:5px 0 0 5px;
+	border-radius:0;
+	border-color:#787878;
+	border-style:solid;*/
+}
+
+#inquiry{
+	position:absolute;
+	bottom:0;
+	width:330px;
+	display:block;
+}
+
+#info{
+	box-sizing: border-box;
+	position:static;
+	height:40px;
+	width:100%;
+	border-width:1px 0 0 0;
+	border-radius:0;
+	border-style:solid;
+	border-color:#787878;
+	background-color:#E5E7E9;
+	text-align: center;
+
+	font-family: 'Roboto', sans-serif;
+	font-size:15px;
+	font-weight: 300;
+	color:#6D6D6D;
+}
+
+#submit{
+	box-sizing: border-box;
+	position:static;
+	height:40px;
+	width:100%;
+	border-width:1px 0 0 0;
+	border-radius:0;
+	border-color:#787878;
+	border-style:solid;
+	background-color:#E5E7E9;
+
+	font:roboto;
+	font-size:15px;
+	font-weight:medium;
+	color:#353535;
+}
+
+#submit:hover{
+	background-color: white;
+}
+
+#currentState{
+}
+
+/*____________3 button: introduction____________________*/
+.introduction{
+	display:inline-block;
+	position:relative;
+	width:330px;
+	height:40px;
+
+	border-width:1px 0 0 0;
+	border-radius:0;
+	border-color:#787878;
+	border-style:solid;
+	background-color: #FFFFFF;
+	/*background: linear-gradient(#FFFFFF, #E5E7E9);*/
+	box-sizing: border-box;
+}
+
+.introduction.highlight{
+	background-color: #E5E7E9;
+}
+
+
+.one{
+	width: 12px;
+	position:relative;
+	top:12px;
+	left:40px;
+	display:none;
+}
+
+
+#twitter{
+	position:relative;
+	top:50px;
+}
+
+
+/*________________________________*/
+.output{
+	z-index:100;
+	background-color:white;
+
+	border-width:0 0 0 1px;
+	border-color:#787878;
+	border-style:solid;
+
+	flex:1;
+	overflow:auto;
+}
+
+/*----- typeface for mimesis gallery*/
+p{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size:13px;
+	color:#353535;
+	margin:0;
+	padding:20px 0 0 20px;
+
+	position:relative;
+	display:inline-block;
+}
+h4{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	text-align: justify;
+	font-size:11px;
+	color:#353535;
+	margin:0;
+	padding:1px 0 0 20px;
+
+	position:relative;
+}
+h5{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	/*text-align: justify;*/
+	font-size:15px;
+	color:#353535;
+	margin:0;
+}
+
+h6{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	/*text-align: justify;*/
+	font-size:15px;
+	color:#353535;
+	margin:0;
+	padding:10px 0 10px 0;
+}
+
+/*--------------- intro---------------*/
+
+.intro{
+	margin: 80px 40px 0 40px;
+
+	display:none;
+}
+
+#thesis{
+	position:relative;
+}
+#image{
+	width:90%;
+	padding:0 0 20px 0;
+}
+
+#text{
+	width:35%;
+	padding:0;
+}
+
+#main{
+	width:100%;
+	padding:0 0 400px 0;
+}
+
+
+/*--------------- collection---------------*/
+.gallery{
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content:flex-start;
+	align-content:flex-start;
+}
+
+@media screen and (min-width: 1621px) and (max-width: 1920px) {
+	.user{
+		border-width: 0 1px 1px 0;
+		border-color:#787878;
+		border-style: solid;
+		box-sizing: border-box;
+		width:20%;
+		height:330px;
+		position: relative;
+
+	}
+}
+
+@media screen and (min-width: 1321px) and (max-width: 1620px) {
+	.user{
+		border-width: 0 1px 1px 0;
+		border-color:#787878;
+		border-style: solid;
+		box-sizing: border-box;
+		width:25%;
+		height:330px;
+		position: relative;
+
+	}
+}
+
+@media screen and (min-width: 1021px) and (max-width: 1320px) {
+	.user{
+		border-width: 0 1px 1px 0;
+		border-color:#787878;
+		border-style: solid;
+		box-sizing: border-box;
+		width:33.33%;
+		height:330px;
+		position: relative;
+
+	}
+}
+
+@media screen and (min-width: 721px) and (max-width: 1020px) {
+	.user{
+		border-width: 0 1px 1px 0;
+		border-color:#787878;
+		border-style: solid;
+		box-sizing: border-box;
+		width:50%;
+		height:330px;
+		position: relative;
+
+	}
+}
+
+@media screen and (max-width: 720px) {
+	.user{
+		border-width: 0 1px 1px 0;
+		border-color:#787878;
+		border-style: solid;
+		box-sizing: border-box;
+		width:100%;
+		height:330px;
+		position: relative;
+
+	}
+}
+
+/*----- the first three block--------*/
+#result{
+	width:85%;
+	margin-left: auto;
+	margin-right: auto;
+	display:block;
+
+	position:absolute;
+	top:50px;
+}
+
+#arroww{
+	width: 10px;
+	position:relative;
+	left:10px;
+}
+
+.b,
+.c{
+	overflow:hidden;
+}
+
+#result1{
+	position:absolute;
+	top:0;
+	width:100%;
+}

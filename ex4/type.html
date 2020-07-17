@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>	
+		body{
+			background:black;
+		}
+		.wrapper {
+				box-sizing:border-box;
+        		display:block;
+        		position:relative;
+        		float:none;
+        		width: 360px;
+        		height: 200px;
+        		margin:30px auto;
+        		overflow:visible;
+        	}
+
+        	/* Q1 */
+        	.bigo1{
+				position:absolute;
+				width:100%;
+				height:100%;
+				border-radius: 80px;
+				z-index: 10;
+				background: linear-gradient(to left, #1a1a1a, #A9A9A9 40%, #cccccc 70%);
+			}
+			.smallo1{
+				position:absolute;
+				left:50%;
+			    top: 50%;
+			    transform: translate(-50%,-50%);
+				width:80%;
+				height:70%;
+				background-color: black;
+				border-radius: 50px;
+				z-index: 10;
+			}
+			.square-cut1-1{
+				width:40%;
+				height:15%;
+				background: linear-gradient(to right, #A9A9A9, #cccccc 70%);
+				position:absolute;
+				right:0;
+				bottom:0;
+				z-index:70;
+			}
+
+
+	        /*.wrapper1{
+			      border-bottom: 100px solid red;
+			      border-left: 25px solid transparent;
+			      border-right: 25px solid transparent;
+			      height: 0;
+			      width: 100px;*/
+
+			/* Q2*/
+			.trigger2{
+				width: 360px;
+        		height: 200px;
+        		background-color: transparent;
+        		position:absolute;
+        		z-index: 200
+			}
+			.bigo2{
+				position:absolute;
+				width:100%;
+				height:100%;
+				background-color: white;
+				border-radius: 60px;
+				z-index: 10;
+				transition: transform 2s ease-in-out;
+			}
+			.trigger2:hover .bigo2{
+				transform:scale(10, 10);
+			}
+			.smallo2{
+				position:absolute;
+				left:50%;
+			    top: 50%;
+			    transform: translate(-50%,-50%);
+				width:80%;
+				height:70%;
+				background-color: black;
+				border-radius: 30px;
+				z-index: 10;
+			}
+			.square-cut0{
+				width:48%;
+				height:27%;
+				background-color: black;
+				position:absolute;
+				bottom:0;
+				right:0;
+				border-top-left-radius: 20px;
+				z-index: 30;
+			}
+			.square-rightbottom1{
+				width:58%;
+				height:43%;
+				background-color: white;
+				position:absolute;
+				bottom:0;
+				right:0;
+				border-top-left-radius: 36px;
+				z-index:20;
+			}
+			.square-rightbottom2{
+				width:40%;
+				height:15%;
+				background-color: white;
+				position:absolute;
+				bottom:0;
+				right:0;
+				border-radius:14px;
+				z-index:40;
+			    transition: transform 2s ease-in-out;
+			}
+			.trigger2:hover .square-rightbottom2{
+				transform:scale(1.8, 3);
+			}
+			.square-rightbottom2-1{
+				width:40%;
+				height:15%;
+				background-color: white;
+				position:absolute;
+				bottom:0;
+				right:0;
+				border-radius:14px;
+				z-index:90;
+			    transition: background-color 2s ease-in-out;
+			}
+			.trigger2:hover .square-rightbottom2-1{
+				background-color: black;
+			}
+			.square-cut{
+				width:20%;
+				height:20%;
+				background-color: white;
+				position:absolute;
+				right:10%;
+				bottom:43%;
+				z-index:60;
+			}
+			.square-cut1{
+				width:20%;
+				height:20%;
+				background-color: black;
+				position:absolute;
+				right:10%;
+				bottom:43%;
+				z-index:60;
+				border-bottom-right-radius: 30px;
+			}
+			.square-cut2{
+				width:30%;
+				height:30%;
+				background-color: black;
+				position:absolute;
+				right:0;
+				bottom:27%;
+				z-index:50;
+			}
+			.square-cut3{
+				width:30%;
+				height:30%;
+				background-color: white;
+				position:absolute;
+				right:0;
+				bottom:27%;
+				border-bottom-right-radius: 60px;
+				z-index:51;
+				transition: transform 2s ease-in-out;
+				transform-origin: top left;
+			}
+			.trigger2:hover .square-cut3{
+				transform:scale(2, 2);
+			}
+			.square-cut4{
+				width:15%;
+				height:20%;
+				background-color: black;
+				position:absolute;
+				right:58%;
+				bottom:15%;
+				border-bottom-right-radius: 25px;
+				z-index:81;
+			}
+			.square-cut5{
+				width:15%;
+				height:20%;
+				background-color: white;
+				position:absolute;
+				right:58%;
+				bottom:15%;
+				z-index:80;
+			}
+			.square-cut6{
+				width:15%;
+				height:20%;
+				background-color: white;
+				position:absolute;
+				right:48%;
+				bottom:0;
+				border-bottom-right-radius: 40px;
+				z-index:71;
+				transition: transform 2s ease-in-out;
+				transform-origin: top left;
+			}
+			.trigger2:hover .square-cut6{
+				transform:scale(2, 2);
+			}
+			.square-cut7{
+				width:15%;
+				height:20%;
+				background-color: black;
+				position:absolute;
+				right:48%;
+				bottom:0;
+				z-index:70;
+			}
+
+			/* Q3 */
+			
+			.bigo3{
+				position:absolute;
+				width:100%;
+				height:100%;
+				background-color: white;
+				border-radius: 80px;
+				z-index: 10;
+			}
+			.smallo3{
+				position:absolute;
+				left:50%;
+			    top: 50%;
+			    transform: translate(-50%,-50%);
+				width:80%;
+				height:70%;
+				background-color: black;
+				border-radius: 50px;
+				z-index: 10;
+			}
+			.trigger{
+				width:40%;
+				height:30%;
+				position:absolute;
+				right:0;
+				bottom:0;
+				z-index:20;
+			}
+			.square-cut3-1{
+				width:100%;
+				height:50%;
+				background: #ff9999;
+				position:absolute;
+				right:0;
+				bottom:0;
+				z-index:20;
+				transition: transform 1s ease-in-out;
+				z-index: 30;
+				transform-origin: bottom right;
+			}
+			.trigger:hover .square-cut3-1{
+				transform:rotate(45deg);
+	}
+
+			/* Q4 */
+			.smallo4{
+				position:absolute;
+				width:220px;
+				height:160px;
+				border:10px solid black;
+				border-radius: 30px;
+				box-shadow: 10px 10px 10px 0 red,inset 10px 10px 10px 0 red;
+				z-index: 20;
+			}
+			.moon{
+			  	position:absolute;
+			  	left:220px;
+			  	bottom:0;
+			    width: 10px;
+			    height: 60px;
+			    background-color: black;
+			    box-shadow: -3px 15px 10px 2px red;
+			    z-index:30;
+			    transform:rotate(-45deg);
+		    }
+		    .smallo5{
+				position:absolute;
+				width:220px;
+				height:160px;
+				border:10px solid black;
+				border-radius: 30px;
+				z-index: 40;
+			}
+
+		    /* Q5*/
+		    .Origino{
+		    	position:absolute;
+			  	left:0;
+			  	bottom:0;
+			    width: 60px;
+			    height: 200px;
+			    border-radius: 20px;
+			    border:4px solid white;
+			}
+			.slash{
+				position:absolute;
+			  	right:0;
+			  	bottom:0;
+			    width: 60px;
+			    height: 0;
+			    border-top:4px solid yellow;
+			    transform:rotate(30deg);
+			    transform-origin: bottom right;
+			}
+		    .trigger4{
+		    	position:absolute;
+			  	left:0;
+			  	bottom:0;
+			    width: 100px;
+			    height: 200px;
+		    }
+		    .Origino-1{
+		    	position:absolute;
+			  	left:0;
+			  	bottom:0;
+			    width: 60px;
+			    height: 200px;
+			    border-radius: 20px;
+			    border:4px solid white;
+			    transition: all 2s ease-in-out;
+		    }
+		    .trigger4:hover .Origino-1{
+				width:66px;
+				left:6px;
+			}
+		    .Origino-2{
+		    	position:absolute;
+			  	left:0;
+			  	bottom:0;
+			    width: 60px;
+			    height: 200px;
+			    border-radius: 20px;
+			    border:4px solid white;
+			    transition: all 2s ease-in-out;
+		    }
+		    .trigger4:hover .Origino-2{
+				width:72px;
+				left:14px;
+			}
+			.Origino-3{
+		    	position:absolute;
+			  	left:0;
+			  	bottom:0;
+			    width: 60px;
+			    height: 200px;
+			    border-radius: 20px;
+			    border:4px solid white;
+			    transition: all 2s ease-in-out;
+		    }
+		    .trigger4:hover .Origino-3{
+				width:78px;
+				left:24px;
+			}
+			.Origino-4{
+		    	position:absolute;
+			  	left:0;
+			  	bottom:0;
+			    width: 60px;
+			    height: 200px;
+			    border-radius: 20px;
+			    border:4px solid white;
+			    transition: all 2s ease-in-out;
+		    }
+		    .trigger4:hover .Origino-4{
+				width:84px;
+				left:36px;
+			}
+			.Origino-5{
+		    	position:absolute;
+			  	left:0;
+			  	bottom:0;
+			    width: 60px;
+			    height: 200px;
+			    border-radius: 20px;
+			    border:4px solid white;
+			    transition: all 2s ease-in-out;
+		    }
+		    .trigger4:hover .Origino-5{
+				width:90px;
+				left:50px;
+			}
+			.Origino-6{
+		    	position:absolute;
+			  	left:0;
+			  	bottom:0;
+			    width: 60px;
+			    height: 200px;
+			    border-radius: 20px;
+			    border:4px solid white;
+			    transition: all 2s ease-in-out;
+		    }
+		    .trigger4:hover .Origino-6{
+				width:96px;
+				left:66px;
+			}
+			.Origino-7{
+		    	position:absolute;
+			  	left:0;
+			  	bottom:0;
+			    width: 60px;
+			    height: 200px;
+			    border-radius: 20px;
+			    border:4px solid white;
+			    transition: all 2s ease-in-out;
+		    }
+		    .trigger4:hover .Origino-7{
+				width:102px;
+				left:84px;
+			}
+			.Origino-8{
+		    	position:absolute;
+			  	left:0;
+			  	bottom:0;
+			    width: 60px;
+			    height: 200px;
+			    border-radius: 20px;
+			    border:4px solid white;
+			    transition: all 2s ease-in-out;
+		    }
+		    .trigger4:hover .Origino-8{
+				width:108px;
+				left:104px;
+			}
+			.Origino-9{
+		    	position:absolute;
+			  	left:0;
+			  	bottom:0;
+			    width: 60px;
+			    height: 200px;
+			    border-radius: 20px;
+			    border:4px solid white;
+			    transition: all 2s ease-in-out;
+		    }
+		    .trigger4:hover .Origino-9{
+				width:108px;
+				left:126px;
+			}
+			.Origino-10{
+		    	position:absolute;
+			  	left:0;
+			  	bottom:0;
+			    width: 60px;
+			    height: 200px;
+			    border-radius: 20px;
+			    border:4px solid white;
+			    transition: all 2s ease-in-out;
+		    }
+		    .trigger4:hover .Origino-10{
+				width:114px;
+				left:150px;
+			}
+			.Origino-11{
+		    	position:absolute;
+			  	left:0;
+			  	bottom:0;
+			    width: 60px;
+			    height: 200px;
+			    border-radius: 20px;
+			    border:4px solid white;
+			    transition: all 2s ease-in-out;
+		    }
+		    .trigger4:hover .Origino-11{
+				width:120px;
+				left:178px;
+			}
+			.Origino-12{
+		    	position:absolute;
+			  	left:0;
+			  	bottom:0;
+			    width: 60px;
+			    height: 200px;
+			    border-radius: 20px;
+			    border:4px solid white;
+			    transition: all 2s ease-in-out;
+		    }
+		    .trigger4:hover .Origino-12{
+				width:126px;
+				left:208px;
+			}
+			/*.yin-yang {
+			      width: 96px;
+			      box-sizing: content-box;
+			      height: 48px;
+			      background: #eee;
+			      border-color: red;
+			      border-style: solid;
+			      border-width: 2px 2px 50px 2px;
+			      border-radius: 100%;
+			      position: relative;
+			  }
+
+		    /*.egg {
+		      display: block;
+		      width: 126px;
+		      height: 180px;
+		      background-color: red;
+		      border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+		    }
+
+   
+    }
+        }
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+    		<div class="bigo1"></div>
+    		<div class="smallo1"></div>
+    		<div class="square-cut1-1"></div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="trigger2">
+	    		<div class="bigo2"></div>
+	    		<div class="smallo2"></div>
+		    	<div class="square-cut0"></div>
+		    	<div class="square-rightbottom1"></div>
+		    	<div class="square-rightbottom2"></div>
+		    	<div class="square-rightbottom2-1"></div>
+		    	<div class="square-cut"></div>
+		    	<div class="square-cut1"></div>
+		    	<div class="square-cut2"></div>
+		    	<div class="square-cut3"></div>
+		    	<div class="square-cut4"></div>
+		    	<div class="square-cut5"></div>
+		    	<div class="square-cut6"></div>
+		    	<div class="square-cut7"></div>
+		    </div>
+	    </div>
+    	<div class="wrapper">
+    		<div class="bigo3"></div>
+    		<div class="smallo3"></div>
+    		<div class="trigger">
+    			<div class="square-cut3-1"></div>
+    		</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="smallo4"></div>
+    		<div class="moon"></div>
+    		<div class="smallo5"></div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="Origino"></div>
+    		<div class="slash"></div>
+    		<div class="trigger4">
+    			<div class="Origino-1"></div>
+	    		<div class="Origino-2"></div>
+	    		<div class="Origino-3"></div>
+	    		<div class="Origino-4"></div>
+	    		<div class="Origino-5"></div>
+	    		<div class="Origino-6"></div>
+	    		<div class="Origino-7"></div>
+	    		<div class="Origino-8"></div>
+	    		<div class="Origino-9"></div>
+	    		<div class="Origino-10"></div>
+	    		<div class="Origino-11"></div>
+	    		<div class="Origino-12"></div>
+    		</div>
+    	</div>
+	</body>
+</html>
