@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>arch sticker</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="zhuye.css">
+    <link rel="icon" type="image/png" href="image/Logo.png" sizes="16x16">
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+		  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+		  crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <div class="nav">
+        <img id='logo' src="image/logo_favicon.png" alt="arch-sticker"/>
+        <div class="module">
+            <img id='list' src="icon/list.svg" alt=""/>
+            <ol id="function">
+                <li><a href="#manage">
+                    <h1>项目管理</h1>
+                </a></li>
+
+                <li><a href="#info">
+                    <h1>项目信息</h1>
+                </a></li>
+
+                <li><a href="#analysis">
+                    <h1>场地分析</h1>
+                </a></li>
+
+                <li><a href="#design">
+                    <h1>方案出图</h1>
+                </a></li>
+
+                <li><a href="#counting">
+                    <h1>指标核算</h1>
+                </a></li>
+
+                <li><a href="#proofing">
+                    <h1>图纸审核</h1>
+                </a></li>
+
+                <li><a href="#reference">
+                    <h1>案例参考</h1>
+                </a></li>
+
+                <li><a href="#cloud">
+                    <div id="dot1" style="width:10px; height:10px; border-radius: 10px;background: #3C3CD9; display:inline-block;">
+                    </div>
+                    <h1>共享云盘</h1>
+                </a></li>
+            </ol>
+
+        </div>
+
+        <div class="usercenter">
+            <img id='help' style="height:28px; display:inline-block;" src="icon/help.svg" alt=""/>
+            <img id='account' style="height:28px; display:inline-block;" src="icon/account.svg" alt=""/>
+        </div>
+    </div>
+
+
+    <div class="tool">
+        <div class="projectaccess">
+            <img id='arrow' src="icon/arrow.svg" alt=""/>
+        </div>
+        <div class="projectaccess1">
+            <div class="project a">
+                <div id="dot">
+                </div>
+                <h3>项目名称</h3>
+            </div>
+            <div class="project b">
+                <div id="dot">
+                </div>
+                <h3>项目名称 2</h3>
+            </div>
+
+        </div>
+
+        <div id="title">
+            <div id="dot">
+            </div>
+            <h2 style="display:inline-block; padding-left: 10px;">项目名称</h2>
+        </div>
+
+        <div id="perspective">
+            <img id='west' style="height: 48px;" src="image/logo2.png" alt=""/>
+            <img id='north'style="height: 48px;" src="image/logo1.png" alt=""/>
+            <img id='east' style="height: 48px;" src="image/logo3.png" alt=""/>
+            <img id='south'style="height: 48px;" src="image/logo9.png" alt=""/>
+            <img id='se'style="height: 48px;" src="image/logo4.png" alt=""/>
+            <img id='sw'style="height: 48px;" src="image/logo5.png" alt=""/>
+            <img id='nw'style="height: 48px;" src="image/logo6.png" alt=""/>
+            <img id='ne'style="height: 48px;" src="image/logo7.png" alt=""/>
+            <img id='up'style="height: 48px;" src="image/logo8.png" alt=""/>
+        </div>
+
+        <div class="button">
+            <div class="nobes save1">
+                <h4>保存截图</h4>
+            </div>
+            <div class="nobes save2">
+                <h4>我的截图</h4>
+            </div>
+            <div class="nobes save2">
+                <h4>保存预设</h4>
+            </div>
+            <div class="nobes save2">
+                <h4>我的预设</h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="leftcolumn">
+
+        </div>
+
+        <div class="rightcolumn">
+
+        </div>
+
+    </div>
+      
+  </body>
+
+  <script>
+
+    $(document).ready(function(){
+
+        $(".projectaccess").on("click",function(){
+                $(".projectaccess").toggleClass("highlight");
+                $(".projectaccess1").toggleClass("highlight");
+                $("#arrow").toggleClass("highlight");
+            });
+
+        $("#manage").on("click",function(){
+                $(this).toggleClass("highlight");
+            });
+        });
+    
+  </script>
+
+
+  </html>

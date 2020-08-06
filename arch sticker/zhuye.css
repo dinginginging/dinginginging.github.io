@@ -1,0 +1,263 @@
+body{
+	display:flex;
+	flex-direction: column;
+	flex-wrap:nowrap;
+	margin:0;
+	position:absolute;
+
+	height:100%;
+	width:100%;
+	display:block;
+}
+
+h1{
+	font-family: Noto Sans SC;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 13px;
+	line-height: 18px;
+/*	display: flex;
+	align-items: center;*/
+	text-align: center;
+	display:inline-block;
+
+	color: #848484;
+}
+
+h2{
+	font-family: Noto Sans SC;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 21px;
+	line-height: 24px;
+/*	display: flex;
+	align-items: center;*/
+	text-align: center;
+	padding:0;
+	margin:0;
+
+	color: black;
+}
+
+h3{
+	font-family: Noto Sans SC;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	text-align: left;
+	margin:0;
+	
+	display:inline-block;
+
+	color: black;
+}
+
+h4{
+	font-family: Noto Sans SC;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 14px;
+	text-align: center;
+	padding:7px 16px;
+	margin:0;
+	
+	display:inline-block;
+
+	color: #555555;
+}
+
+/*第一层*/
+
+.nav{
+	position:relative;
+	flex:none;
+	width: 100%;
+	height: 34px;
+	left: 0px;
+	top: 0px;
+
+	background: #2E2E2E;
+}
+
+#logo{
+	position: absolute;
+	height:25px;
+	top:5px;
+	left:5px;
+}
+
+.module{
+	width:950px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+ol {
+	display:inline-block;
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+
+li{
+	display:inline-block;
+	padding-right:55px;
+}
+
+a{
+	text-decoration: none;
+}
+#list{
+	position:relative;
+	height:24px;
+	top:7px;
+	padding-right:15px;
+}
+.usercenter{
+	display:inline-block;
+	position:absolute;
+	right: 3px;
+	top: 3px;
+}
+
+
+/*第二层*/
+
+.tool{
+	position:relative;
+	width: 100%;
+	height: 50px;
+
+	display:inline-block;
+	flex:none;
+}
+.projectaccess{
+	position: absolute;
+	width: 32px;
+	height: 40px;
+	left: 0px;
+	top: 5px;
+
+	background: #EBEBEB;
+	border-radius: 0px 10px 10px 0px;
+	z-index: 100;
+}
+
+.projectaccess.highlight{
+	left: 150px;
+}
+
+.projectaccess1{
+	position:absolute;
+	width:150px;
+	height:800px;
+	left:-150px;
+	top:5px;
+
+	border-radius: 0 0 4px 0;
+	background: #EBEBEB;
+	z-index: 100;
+}
+.projectaccess1.highlight{
+	left: 0;
+}
+
+.project{
+	margin-left:15px;
+}
+
+#arrow{
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height:30px;
+
+	opacity: 60%;
+}
+#arrow.highlight{
+	transform: translate(-50%, -50%) rotate(180deg);
+}
+
+#title{
+	position:absolute;
+	left:70px;
+	top:13px;
+}
+#dot{
+	width:15px;
+	height:15px;
+
+	border-radius: 15px;
+	background: #F25959;
+
+	display:inline-block;
+}
+#perspective{
+	position:absolute;
+	display:inline-block;
+
+	left:240px;
+	top:1px;
+}
+
+.button{
+	position:absolute;
+	display:inline-block;
+	right:15px;
+	top:11px;
+}
+.nobes{
+	width:90px;
+	height:28px;
+	background: #EBEBEB;
+	border-radius: 8px;
+	display:inline-block;
+}
+
+/*第三层*/
+
+.main{
+	position:absolute;
+	top:84px;
+	flex:auto;
+	width: 100%;
+	height:800px;
+	/*这一部分的高度我搞不定，不知为什么flex auto没有自动填充余下的空间*/
+
+	background: #F8F8F8;
+
+	display:flex;
+	flex-direction: row;
+	flex-wrap:nowrap;
+	justify-content:space-between;
+}
+
+.leftcolumn{
+	position: relative;
+
+	width: 124px;
+	height: 463px;
+	border-radius: 4px;
+	box-shadow: 1px 1px 2px 0 #E6E6E6;
+
+	left: 15px;
+	top: 15px;
+	background:white;
+}
+
+.rightcolumn{
+	position: relative;
+	width: 210px;
+	height: 600px;
+	right: 15px;
+	top: 15px;
+
+	border-radius: 4px;
+	box-shadow: -1px 1px 2px 0 #E6E6E6;
+
+	background:white;
+}
